@@ -1,0 +1,322 @@
+/*		PDL: Private Digital Library - Foglio di stile
+
+		Autori:	Catapano Marco, Amadeo Marco, Roberto Masellis
+		A.A:		2014-15
+ */ 
+
+
+/* Stili di base */
+
+body{
+margin: auto;
+}
+
+
+h1{
+font-family: "Helvetica", Times, serif;
+font-size: 23pt;
+color:#404453;
+font-weight: normal;
+}
+
+h2{
+font-family: "Helvetica", Times, serif;
+font-size: 20pt;
+}
+
+
+h3{
+font-family: "Helvetica", Times, serif;
+font-size: 18pt;
+
+}
+
+h4{
+font-family: "Helvetica", Times, serif;
+font-size: 15pt;
+}
+
+p{
+text-align: justify;
+font-family: "Helvetica", Times, serif;
+font-size: 10pt;
+}
+
+#p_errore{
+color: red;
+font-size: 11pt;
+}
+
+#notifica{
+color: red;
+font-size: 11pt;
+font-weight: bold;
+}
+
+ol{
+font-family: "Helvetica", Times, serif;
+font-size: 11pt;
+}
+
+ul{
+font-family: "Helvetica", Times, serif;
+font-size: 11pt;
+}
+
+.scelta_doc{
+list-style: none;
+
+}
+
+
+/* Blocchi strutturali del sito */
+
+#menu_sup{
+float:right;
+margin-right:15%;
+color: #FFFFFF;
+font-family:"Helvetica", Times, serif;
+font-size:12pt;
+margin-top:20px;
+}
+
+#menu_sup a{
+color: #FFF;
+}
+
+#menu_sup span{
+color:#33BDBA;
+}
+
+
+#contenuto{
+margin: 0 auto;   
+width:70%;
+margin-bottom: 30px;  /* Catapano Fixed */
+}
+
+/* Suddivisione di #contenuto in due colonne */
+#contenuto_left{
+float: left;
+margin-top: 2%;
+height: 200px;
+width: 19%;
+}
+
+/* elenco puntato non ordinato */
+#contenuto_left ul{
+list-style-image: url('../images/ul-style.png');
+}
+
+#contenuto_left a{
+color: #4D515E;
+font-size: 12pt;
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+}
+
+#contenuto_right{
+float: right;
+padding: 2%;
+border-left: 1px solid #67CEC7;
+height: auto;
+width: 75%;
+}
+
+
+
+#intestazione_home{ 
+width:auto; 
+height:100px;
+border-bottom:10px solid #67CEC7;
+background-color: #4D515E;
+}
+
+#intestazione_home img{
+margin-left:15%; 
+margin-top:15px;
+
+}
+
+
+#footer{
+position: fixed;
+bottom: 0;
+width:70%;
+margin-left:15%;
+text-align: center;
+font-family:"Helvetica", Times, serif;
+background-color: #FFF;
+border-top: 1px solid #DCDCDC;
+
+}
+
+#footer span{
+color:#33BDBA;
+font-size:22px;
+}
+
+#footer a{
+font-weight: normal;
+text-decoration: none;
+}
+
+
+
+
+/* Tabelle */
+
+#tab_autentica td,
+#tab_autentica  tr,
+#tab_autentica{
+border:none;
+text-align: left;
+font-size:10pt;
+color:#FFFFFF;
+}
+
+
+#tab_registra,
+#tab_registra td,
+#tab_registra tr {
+border:none;
+text-align: left;
+font-size:12pt;
+padding: 3px;
+font-family: "Helvetica", Times, sans-serif;
+}
+
+#tab_registra input {
+text-align: left;
+font-size:15pt;
+padding: 3px;
+font-family: "Helvetica", Times, sans-serif;
+}
+
+
+.tab_scheda {
+font-family: "Helvetica", Times, sans-serif;
+width: auto;
+border-collapse: collapse;
+}
+
+.tab_scheda td, 
+.tab_scheda th {
+    font-size: 11pt;
+    border: 1px solid #DCDCDC;
+    padding: 4px 7px 3px 7px;
+    
+}
+
+.tab_scheda th {
+    font-size: 11pt;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #67CEC7;
+    color: #FFF;
+}
+
+
+/*  Tab quasi dinamica di inseirmento generico */
+#tab_inserimento {
+font-family: "Helvetica", Times, sans-serif;
+width: auto;
+border-collapse: collapse;
+
+}
+
+#tab_inserimento td, 
+#tab_inserimento th,
+#libro td,
+#atto td,
+#rivista td,
+#doctecnico td,
+#capitolo td {
+    font-size: 11pt;
+    border: 1px solid #DCDCDC;
+    padding: 4px 7px 3px 7px;
+    
+}
+
+
+
+/* Blocco contenente il form di autenticazione*/
+#autentica{
+text-align: left;
+margin-left: 15%;
+color:#FFFFFF;
+float:left;
+margin-top:10px;
+font-family: "Helvetica";
+}
+
+#autentica a,
+#autentica p{
+font-size: 15px;
+color: #FFF;
+}
+
+/* ricerca_home è un blocco centrato orizzontalmente  */
+#ricerca_home{
+margin: 0 auto; 
+width: 600px;
+}	
+
+#ricerca_home p{
+text-align: center;
+}	
+
+#risultati_ricerca{
+font-family: "Helvetica", Arial, Helvetica, sans-serif;
+width: 70%;
+border-collapse: collapse;
+font-size: 10pt;
+}
+
+#header_risultati_ricerca{
+	width: auto;
+	height: 160px;
+}
+
+/* Barra di ricerca */
+.button_ricerca{
+margin-top: 20px;
+width:200px;
+}
+
+.barra{
+font-family:Helvetica;
+width:500px;
+height:30px;
+font-size: 15pt;
+margin: 10px;
+}
+
+.login{
+width: 100px;
+margin:4px;
+font-family:"Helvetica";
+}
+
+
+/* SEARCH */
+
+            #result ul{
+             margin-left:-40px;
+            }
+ 
+            #result li{
+             list-style-type: none;
+             border-bottom: dotted 1px black;
+              height: auto;
+            }
+ 
+            #result li:hover{
+             background: #67CEC7;
+            }
+ 
+            #result a{
+             text-decoration: none;
+              font-size: 18px;
+            }
+/* END AJAX SEARCH */
